@@ -31,7 +31,7 @@ ALLOWED_HOSTS = ['30289417875946bcad4656959947456c.vfs.cloud9.eu-west-2.amazonaw
 # Application definition
 
 INSTALLED_APPS = [
-    'students.apps.StudentsConfig'
+    'students.apps.StudentsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
