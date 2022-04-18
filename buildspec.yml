@@ -12,8 +12,8 @@ phases:
     pre_build:
         commands:
             - python --version
-            - pylint $CODEBUILD_SRC_DIR/*.py
-            - pylint $CODEBUILD_SRC_DIR/collegebuddies/*.py
+            - pylint /home/ec2-user/environment/devopsproj/x21166374-Devopssec/*.py
+            - pylint /home/ec2-user/environment/devopsproj/x21166374-Devopssec/collegebuddies/*.py
 artifacts:
     files:
     - '**/*'
