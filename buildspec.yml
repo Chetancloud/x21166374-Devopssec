@@ -9,11 +9,11 @@ phases:
             # Install dependencies needed for running the static analysis
             #- pip install -r requirements.txt pylint
                 
-    pre_build:
-        commands:
-            - python --version
-            - #pylint /home/ec2-user/environment/devopsproj/x21166374-Devopssec/*.py
-            - pylint /home/ec2-user/environment/devopsproj/x21166374-Devopssec/collegebuddies/students/models.py
+         pre_build:
+            commands:
+                - python --version
+                - pylint  --disable=all $CODEBUILD_SRC_DIR/*.py
+                - pylint  --disable=all $CODEBUILD_SRC_DIR/collegebuddies/*.py
 artifacts:
     files:
     - '**/*'
