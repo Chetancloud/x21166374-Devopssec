@@ -14,9 +14,9 @@ def about(request):
   #  context = {}
 #    return render(request, 'preloans/main.html', context)
     
-def contacts(request):
+def students(request):
     context = {}
-    return render(request, 'students/contacts.html', context)
+    return render(request, 'students/students.html', context)
     
 def services(request):
     context = {}
