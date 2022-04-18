@@ -12,7 +12,7 @@ phases:
     pre_build:
         commands:
             - python --version
-            - pylint /home/ec2-user/environment/devopsproj/x21166374-Devopssec/*.py
+            - #pylint /home/ec2-user/environment/devopsproj/x21166374-Devopssec/*.py
             - pylint /home/ec2-user/environment/devopsproj/x21166374-Devopssec/collegebuddies/*.py
 artifacts:
     files:
