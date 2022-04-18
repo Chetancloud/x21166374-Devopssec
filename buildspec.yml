@@ -8,12 +8,12 @@ phases:
             - pip install --upgrade pip
             # Install dependencies needed for running the static analysis
             #- pip install -r requirements.txt pylint
-                
-         pre_build:
+            
+        pre_build:
             commands:
                 - python --version
-                - pylint  --disable=all $CODEBUILD_SRC_DIR/*.py
-                - pylint  --disable=all $CODEBUILD_SRC_DIR/collegebuddies/*.py
+                - pylint --disable=all $CODEBUILD_SRC_DIR/*.py
+                - pylint --disable=all $CODEBUILD_SRC_DIR/collegebuddies/*.py
 artifacts:
     files:
     - '**/*'
