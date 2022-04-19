@@ -24,4 +24,9 @@ def services(request):
 def contacts(request):
     context = {}
     return render(request, 'students/contacts.html', context)
+
+def helps(request):
+    context = {}
+    return render(request, 'students/helps.html', context)
+    
     
