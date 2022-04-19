@@ -21,4 +21,7 @@ def students(request):
 def services(request):
     context = {}
     return render(request, 'students/services.html', context)
+def contacts(request):
+    context = {}
+    return render(request, 'students/contacts.html', context)
     
